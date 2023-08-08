@@ -1,0 +1,157 @@
+.header {
+  display: flex;
+}
+
+.header-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-right: 5rem;
+}
+
+.header-content h1 {
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 41px;
+  line-height: 55px;
+  letter-spacing: -0.04rem;
+}
+
+.header-content p {
+  font-family: var(--font-family);
+  color: #81afdd;
+  font-size: 18px;
+  font-style: normal;
+  color: var(--color-text);
+  line-height: 28px;
+  margin-top: 1.5rem;
+}
+
+.header-input {
+  width: 100%;
+  margin: 2rem 1rem;
+  display: flex;
+}
+.header-input input {
+  flex: 2;
+  width: 100%;
+  min-height: 50px;
+  font-family: var(--font-family);
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  background: var(--color-footer);
+  border: 2px solid var(--color-footer);
+  outline: none;
+  color: #fff;
+  padding: 0 1rem;
+  color: #3d6184;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.header-input button {
+  flex: 0.6;
+  width: 100%;
+  min-height: 50px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  background: #ff4820;
+  color: #fff;
+  font-family: var(--font-family);
+  font-size: 20px;
+  font-weight: 700;
+  outline: none;
+  border: 2px solid var(--color-footer);
+  cursor: pointer;
+}
+
+.header-peoples {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.header-peoples img {
+  width: 181.786px;
+  height: 38px;
+  flex-shrink: 0;
+}
+
+.header-peoples p {
+    margin: 0 0 0 1rem;
+  color: #fff;
+  font-family: var(--font-family);
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 37.611px;
+}
+
+.gpt3-image{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gpt3-image img{
+    width: 100%;
+}
+
+@media screen and (max-width:1050px) {
+    .header{
+        flex-direction: column;
+    }
+
+    .header-content{
+        margin: 0 0 3rem;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .header h1{
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+    .header p{
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .header-peoples{
+        flex-direction: column;
+    }
+
+    .header-peoples p{
+        margin: 0;
+    }
+
+    .header-input input,
+    .header-input button{
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+@media screen and (max-width:490px) {
+    .header h1{
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    .header p{
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .header-input input,
+    .header-input button{
+        font-size: 12px;
+        line-height: 16px;
+    }
+}

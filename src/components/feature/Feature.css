@@ -1,0 +1,63 @@
+.gpt3-feature {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  margin: 1rem;
+}
+
+.feature-title {
+  flex: 1;
+  max-width: 100px;
+  margin-right: 2rem;
+}
+
+.feature-title h1 {
+  color: #fff;
+  font-family: var(--font-family);
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px; /* 312.5% */
+  letter-spacing: -0.96px;
+}
+
+.feature-title div {
+  box-shadow: 0 4px 4pc rgba(0, 0, 0, 0.25);
+  margin-bottom: 0.35rem;
+  width: 38px;
+  height: 3px;
+  flex-shrink: 0;
+  background: linear-gradient(143deg, #ae67fa 0%, #f49867 97.4%), #fff;
+}
+
+.feature-text {
+  flex: 2;
+  display: flex;
+  max-width: 390px;
+}
+
+.feature-text p {
+  color: var(--color-text);
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px; /* 187.5% */
+}
+
+
+@media screen and (max-width: 550px) {
+    .feature-title h1 {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .feature-text p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .gpt3-feature {
+        margin: 1rem 0;
+    }
+}
