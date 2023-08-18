@@ -10,7 +10,7 @@
 <div align='center'>
 <img src='https://github.com/hemil585/react-gpt3-website/assets/117675167/c99b0d65-e39b-4b92-83ff-dfb8f713847d'/>
 
-
+</div>
 <br />
 
 ## Design Inspiration
